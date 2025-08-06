@@ -1,0 +1,21 @@
+{
+  "name": "Bible Word Explorer",
+  "short_name": "Word Explorer",
+  "description": "Find God's Word in Every Puzzle — Explore the Holy Bible, by finding one word at a time.",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/bible_word_explorer_logo_top_left.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#FFFFFF",
+  "background_color": "#FCF8F1"
+}

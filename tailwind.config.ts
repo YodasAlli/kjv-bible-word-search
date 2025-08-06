@@ -52,7 +52,14 @@ export default {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
         },
-        // Custom colors for your biblical theme
+        // Custom brand colors for Bible Word Explorer
+        'app-background': '#FCF8F1',  // page & panel backgrounds
+        'app-text':       '#2D3748',  // primary text
+        'app-primary':    '#2B6CB0',  // buttons, links, highlights
+        'app-secondary':  '#9B2C2C',  // badges & secondary accents
+        'app-accent':     '#D69E2E',  // call-outs & highlights
+
+        // legacy colors (if you still need them)
         paper: '#FCF8F1',
         tile: '#FFFFFF',
         highlight: '#FFD54F',
