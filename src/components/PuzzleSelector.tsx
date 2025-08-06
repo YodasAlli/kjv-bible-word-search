@@ -28,13 +28,13 @@ const PuzzleSelector: React.FC<PuzzleSelectorProps> = ({
   return (
     <div className="container mx-auto p-6">
       <div className="text-center mb-8">
-        <h1 className="text-4xl font-bold text-primary mb-2">
+        <h1 className="text-4xl font-bold font-heading text-primary mb-2">
           Biblical Word Search
         </h1>
-        <p className="text-lg text-muted-foreground mb-4">
+        <p className="text-lg font-body text-muted-foreground mb-4">
           Discover the treasures hidden in God's Word
         </p>
-        <div className="text-sm text-muted-foreground">
+        <div className="text-sm font-body text-muted-foreground">
           Completed: {completedPuzzles.length} / {puzzles.length} puzzles
         </div>
       </div>
@@ -67,22 +67,22 @@ const PuzzleSelector: React.FC<PuzzleSelectorProps> = ({
                     </Badge>
                   )}
                 </div>
-                <CardTitle className="text-xl text-primary">
+                <CardTitle className="text-xl font-heading text-primary">
                   {puzzle.title}
                 </CardTitle>
-                <CardDescription className="text-sm font-medium text-divine">
+                <CardDescription className="text-sm font-medium font-body text-divine">
                   {puzzle.theme}
                 </CardDescription>
               </CardHeader>
               
               <CardContent className="pt-0">
-                <p className="text-sm text-muted-foreground mb-3 italic">
+                <p className="text-sm font-body text-muted-foreground mb-3 italic">
                   "{puzzle.verse}"
                 </p>
-                <p className="text-sm mb-4">
+                <p className="text-sm font-body mb-4">
                   {puzzle.description}
                 </p>
-                <div className="flex justify-between items-center text-xs text-muted-foreground mb-4">
+                <div className="flex justify-between items-center text-xs font-body text-muted-foreground mb-4">
                   <span>{puzzle.words.length} words</span>
                   <span>{puzzle.size}×{puzzle.size} grid</span>
                 </div>

@@ -51,13 +51,13 @@ const Index = () => {
       >
         <div className="absolute inset-0 bg-primary/50"></div>
         <div className="relative z-10 max-w-2xl mx-auto px-4">
-          <h1 className="text-5xl font-bold mb-4 text-shadow-lg">
+          <h1 className="text-5xl font-bold font-heading mb-4 text-shadow-lg">
             Biblical Word Search
           </h1>
-          <p className="text-xl mb-2">
+          <p className="text-xl font-body mb-2">
             "Thy word is a lamp unto my feet, and a light unto my path."
           </p>
-          <p className="text-lg opacity-90">
+          <p className="text-lg font-body opacity-90">
             - Psalm 119:105
           </p>
         </div>

@@ -14,10 +14,10 @@ export function Header() {
       />
       */}
       <div>
-        <h1 className="text-2xl font-bold text-text">
+        <h1 className="text-2xl font-bold font-heading text-text">
           Bible Word Explorer
         </h1>
-        <p className="text-sm text-text/70">
+        <p className="text-sm font-body text-text/70">
           Find God's Word in Every Puzzle
         </p>
       </div>
