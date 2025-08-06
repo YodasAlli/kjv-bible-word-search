@@ -70,7 +70,7 @@ const PuzzleSelector: React.FC<PuzzleSelectorProps> = ({
                 <CardTitle className="text-xl font-heading text-primary">
                   {puzzle.title}
                 </CardTitle>
-                <CardDescription className="text-sm font-medium font-body text-divine">
+                <CardDescription className="text-sm font-medium font-body text-muted-foreground">
                   {puzzle.theme}
                 </CardDescription>
               </CardHeader>

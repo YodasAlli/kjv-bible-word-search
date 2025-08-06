@@ -1,129 +1,48 @@
+/* 1) Import your Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:wght@400;700&display=swap');
+
+/* 2) Define HSL CSS vars for your brand colors */
+:root {
+  --color-background: 42 26 97;  /* hsl(42, 26%, 97%) for #FCF8F1 */
+  --color-text:       210 25 24; /* hsl(210, 25%, 24%) for #2D3748 */
+  --color-primary:    212 57 53; /* hsl(212, 57%, 53%) for #2B6CB0 */
+  --color-secondary:  0 60 34;   /* hsl(0, 60%, 34%)   for #9B2C2C */
+  --color-accent:     43 56 49;  /* hsl(43, 56%, 49%)  for #D69E2E */
+  
+  /* Keep essential shadcn/ui variables */
+  --background: 42 26 97;
+  --foreground: 210 25 24;
+  --card: 0 0% 100%;
+  --card-foreground: 210 25 24;
+  --popover: 0 0% 100%;
+  --popover-foreground: 210 25 24;
+  --primary: 212 57 53;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 0 60 34;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 42 26 95;
+  --muted-foreground: 210 15 50;
+  --accent: 43 56 49;
+  --accent-foreground: 210 25 24;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 212 57 53;
+  --radius: 0.5rem;
+}
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
-
+/* 3) Apply your fonts globally */
 @layer base {
-  :root {
-    --background: 45 100% 98%;
-    --foreground: 345 15% 25%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 345 15% 25%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 345 15% 25%;
-
-    --primary: 220 85% 45%;
-    --primary-foreground: 0 0% 100%;
-    
-    --divine: 280 70% 50%;
-    --divine-foreground: 0 0% 100%;
-    
-    --heavenly: 45 100% 85%;
-    --sacred: 200 85% 60%;
-    --sacred-foreground: 0 0% 100%;
-    
-    --grace: 320 60% 70%;
-    --grace-foreground: 345 15% 25%;
-    
-    --blessing: 60 85% 70%;
-    --blessing-foreground: 345 15% 25%;
-
-    --secondary: 45 100% 92%;
-    --secondary-foreground: 345 15% 25%;
-
-    --muted: 45 60% 95%;
-    --muted-foreground: 345 10% 50%;
-
-    --accent: 320 60% 70%;
-    --accent-foreground: 345 15% 25%;
-    
-    --gradient-divine: linear-gradient(135deg, hsl(var(--divine)), hsl(var(--primary)));
-    --gradient-sacred: linear-gradient(135deg, hsl(var(--sacred)), hsl(var(--blessing)));
-    --gradient-heavenly: linear-gradient(180deg, hsl(var(--heavenly)), hsl(var(--secondary)));
-    
-    --shadow-divine: 0 10px 30px -10px hsl(var(--divine) / 0.3);
-    --shadow-sacred: 0 8px 25px -8px hsl(var(--sacred) / 0.25);
-    
-    --transition-divine: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-}
-
-@layer base {
-  * {
-    @apply border-border;
-  }
-
   body {
-    @apply bg-background text-foreground;
+    @apply font-body bg-background text-text;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading text-text;
   }
 }
