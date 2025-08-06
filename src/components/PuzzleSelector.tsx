@@ -18,9 +18,9 @@ const PuzzleSelector: React.FC<PuzzleSelectorProps> = ({
 }) => {
   const getDifficultyColor = (difficulty: string) => {
     switch (difficulty) {
-      case 'Easy': return 'bg-blessing text-blessing-foreground';
-      case 'Medium': return 'bg-sacred text-sacred-foreground';
-      case 'Hard': return 'bg-divine text-divine-foreground';
+      case 'Easy': return 'bg-accent text-accent-foreground';
+      case 'Medium': return 'bg-primary text-primary-foreground';
+      case 'Hard': return 'bg-secondary text-secondary-foreground';
       default: return 'bg-secondary text-secondary-foreground';
     }
   };
@@ -49,7 +49,7 @@ const PuzzleSelector: React.FC<PuzzleSelectorProps> = ({
               className={cn(
                 "cursor-pointer transition-all duration-300 hover:shadow-lg hover:scale-105 border-2",
                 isCompleted 
-                  ? "border-sacred bg-sacred/5 shadow-sacred" 
+                  ? "border-accent bg-accent/5 shadow-md" 
                   : "border-border hover:border-primary"
               )}
             >
@@ -62,7 +62,7 @@ const PuzzleSelector: React.FC<PuzzleSelectorProps> = ({
                     {puzzle.difficulty}
                   </Badge>
                   {isCompleted && (
-                    <Badge className="bg-sacred text-sacred-foreground">
+                    <Badge className="bg-accent text-accent-foreground">
                       ✓ Completed
                     </Badge>
                   )}
@@ -88,7 +88,7 @@ const PuzzleSelector: React.FC<PuzzleSelectorProps> = ({
                 </div>
                 <Button 
                   onClick={() => onSelectPuzzle(puzzle)}
-                  className="w-full bg-gradient-divine hover:bg-gradient-sacred transition-all duration-300"
+                  className="w-full"
                   variant="default"
                 >
                   {isCompleted ? 'Play Again' : 'Start Puzzle'}

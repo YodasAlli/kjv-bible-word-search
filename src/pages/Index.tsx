@@ -43,13 +43,13 @@ const Index = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-heavenly">
+    <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <div 
         className="relative h-64 bg-cover bg-center bg-no-repeat flex items-center justify-center text-center text-white"
         style={{ backgroundImage: `url(${heroImage})` }}
       >
-        <div className="absolute inset-0 bg-primary/40"></div>
+        <div className="absolute inset-0 bg-primary/50"></div>
         <div className="relative z-10 max-w-2xl mx-auto px-4">
           <h1 className="text-5xl font-bold mb-4 text-shadow-lg">
             Biblical Word Search

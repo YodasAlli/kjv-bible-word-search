@@ -22,15 +22,15 @@ export default {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
-        background: 'hsl(var(--background))',
-        foreground: 'hsl(var(--foreground))',
+        background: '#FCF8F1',  // Override shadcn background with brand color
+        foreground: '#2D3748',  // Override shadcn foreground with brand text color
         primary: {
-          DEFAULT: 'hsl(var(--primary))',
-          foreground: 'hsl(var(--primary-foreground))',
+          DEFAULT: '#2B6CB0',  // Brand blue
+          foreground: '#FFFFFF',
         },
         secondary: {
-          DEFAULT: 'hsl(var(--secondary))',
-          foreground: 'hsl(var(--secondary-foreground))',
+          DEFAULT: '#9B2C2C',  // Brand red  
+          foreground: '#FFFFFF',
         },
         destructive: {
           DEFAULT: 'hsl(var(--destructive))',
@@ -41,8 +41,8 @@ export default {
           foreground: 'hsl(var(--muted-foreground))',
         },
         accent: {
-          DEFAULT: 'hsl(var(--accent))',
-          foreground: 'hsl(var(--accent-foreground))',
+          DEFAULT: '#D69E2E',  // Brand gold
+          foreground: '#2D3748',
         },
         popover: {
           DEFAULT: 'hsl(var(--popover))',
@@ -53,8 +53,7 @@ export default {
           foreground: 'hsl(var(--card-foreground))',
         },
         // Custom brand colors for Bible Word Explorer
-        'app-background': '#FCF8F1',  // page & panel backgrounds
-        'app-text':       '#2D3748',  // primary text
+        text: '#2D3748',        // primary text alias
         'app-primary':    '#2B6CB0',  // buttons, links, highlights
         'app-secondary':  '#9B2C2C',  // badges & secondary accents
         'app-accent':     '#D69E2E',  // call-outs & highlights

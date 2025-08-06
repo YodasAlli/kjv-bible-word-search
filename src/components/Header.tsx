@@ -5,7 +5,7 @@ import React from 'react'
 
 export function Header() {
   return (
-    <header className="flex items-center bg-app-background text-app-text p-4 shadow-md border-b">
+    <header className="flex items-center bg-background p-4 shadow-md border-b">
       {/* Uncomment when logo is added:
       <img
         src={logo}
@@ -14,10 +14,10 @@ export function Header() {
       />
       */}
       <div>
-        <h1 className="text-2xl font-bold text-app-primary">
+        <h1 className="text-2xl font-bold text-text">
           Bible Word Explorer
         </h1>
-        <p className="text-sm text-app-text/70">
+        <p className="text-sm text-text/70">
           Find God's Word in Every Puzzle
         </p>
       </div>
