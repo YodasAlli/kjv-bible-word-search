@@ -50,11 +50,8 @@ const Index = () => {
         style={{ backgroundImage: `url(${heroImage})` }}
       >
         <div className="absolute inset-0 bg-primary/50"></div>
-        <div className="relative z-10 max-w-2xl mx-auto px-4">
-          <h1 className="text-5xl font-bold font-heading mb-4 text-shadow-lg">
-            Biblical Word Search
-          </h1>
-          <p className="text-xl font-body mb-2">
+        <div className="relative z-10 max-w-2xl mx-auto px-4 flex flex-col items-center justify-center h-full">
+          <p className="text-2xl font-body mb-3 text-center">
             "Thy word is a lamp unto my feet, and a light unto my path."
           </p>
           <p className="text-lg font-body opacity-90">
